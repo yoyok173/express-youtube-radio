@@ -1,5 +1,5 @@
 # Express YouTube Radio
-A simple YouTube-to-MP3 stream server with an express http interface.
+A simple YouTube-to-MP3 stream server with an express http interface.  
 **Warning:** This project is not for deployment in production setups because of existing issues.
 
 ## Installation
@@ -11,8 +11,13 @@ A simple YouTube-to-MP3 stream server with an express http interface.
 
 ## API
 > /listen
+
 This endpoint starts streaming the audio bytes to your device.
 
-> /play/youtube/<videoId>
+> /play/youtube/\<videoId\>
+
 This endpoint starts/queues a YouTube video for the livestream. It returns a JSON response `{"success":true}` on success or
 `{"success":false,"error":"VIDEO_NOT_AVAILABLE"}` on failure.
+
+## Issues
+The current method of piping the output of ffmpeg to the listening sockets without a buffer between these two; leads to desync in the playback position.
