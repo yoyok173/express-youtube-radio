@@ -1,0 +1,18 @@
+{
+  "name": "express-youtube-radio",
+  "version": "1.0.0",
+  "description": "A simple YouTube-to-MP3 stream server with an express http interface",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["express", "youtube", "youtube-dl", "radio"],
+  "author": "Marek Kulik <marek.kulik@hotmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2",
+    "fluent-ffmpeg": "^2.1.0",
+    "youtube-dl": "^1.11.1"
+  }
+}
