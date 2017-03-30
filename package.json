@@ -7,10 +7,16 @@
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["express", "youtube", "youtube-dl", "radio"],
+  "keywords": [
+    "express",
+    "youtube",
+    "youtube-dl",
+    "radio"
+  ],
   "author": "Marek Kulik <marek.kulik@hotmail.com>",
   "license": "ISC",
   "dependencies": {
+    "bl": "^1.2.0",
     "express": "^4.15.2",
     "fluent-ffmpeg": "^2.1.0",
     "youtube-dl": "^1.11.1"
